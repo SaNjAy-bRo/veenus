@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MapPin, MessageCircle, Instagram, Mail } from "lucide-react";
 
 export default function Footer() {
@@ -13,15 +14,15 @@ export default function Footer() {
           
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start space-y-4">
-            <Link href="/" className="flex flex-col items-center md:items-start text-center md:text-left">
-              <span className="font-serif text-4xl font-bold tracking-wider text-gradient-gold drop-shadow-lg">
-                Veenus
-              </span>
-              <span className="text-[0.7rem] tracking-widest uppercase text-slate-300 mt-1">
-                Wellness & Slimming Center
-              </span>
+            <Link href="/" className="inline-block relative w-[220px] h-[80px] md:w-[280px] md:h-[100px] group">
+              <Image 
+                src="/Veenus.png" 
+                alt="Veenus Wellness & Slimming Center" 
+                fill 
+                className="object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </Link>
-            <p className="text-slate-400 mt-4 text-sm leading-relaxed text-center md:text-left">
+            <p className="text-slate-400 mt-2 text-sm leading-relaxed text-center md:text-left">
               Khammam's foremost wellness and slimming center offering advanced body slimming and skin care services with safe, proven, and painless services.
             </p>
           </div>

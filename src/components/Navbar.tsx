@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -32,13 +33,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex flex-col items-center">
-            <span className="font-serif text-3xl font-bold tracking-wider text-gradient-gold">
-              Veenus
-            </span>
-            <span className="text-[0.65rem] tracking-widest uppercase text-slate-300 mt-0.5">
-              Wellness & Slimming
-            </span>
+          <Link href="/" className="flex items-center group relative z-50">
+            <div className="relative w-[180px] h-[60px] md:w-[240px] md:h-[80px] transition-transform duration-300 hover:scale-105">
+              <Image 
+                src="/Veenus.png" 
+                alt="Veenus Wellness & Slimming Center" 
+                fill 
+                className="object-contain"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

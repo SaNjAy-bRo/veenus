@@ -1,17 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-900: #1C0434;
-  --color-primary-800: #2D0A46;
-  --color-primary-700: #3B0A66;
-  --color-primary-600: #4B0B8C;
-  --color-gold-500: #D4AF37;
-  --color-gold-400: #F3E5AB;
-  --color-gold-300: #FFF3C4;
-  --color-gold-600: #AA8A2A;
+  --color-primary-950: #1a0024;
+  --color-primary-900: #290038;
+  --color-primary-800: #4a0963;
+  --color-primary-700: #66108a;
+
+  --color-gold-200: #fff8dc;
+  --color-gold-300: #ffeca1;
+  --color-gold-400: #ffd700;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #aa800b;
+  --color-gold-700: #8b6508;
   
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
+  --font-signature: var(--font-great-vibes);
   
   --animate-carousel: carousel 30s linear infinite;
   --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -50,10 +54,43 @@ body {
 
 /* Custom Utilities for Premium Look */
 @utility text-gradient-gold {
-  background: linear-gradient(135deg, var(--color-gold-400) 0%, var(--color-gold-500) 50%, var(--color-gold-600) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--color-gold-600) 0%,
+    var(--color-gold-400) 25%,
+    var(--color-gold-200) 50%,
+    var(--color-gold-400) 75%,
+    var(--color-gold-600) 100%
+  );
+  background-size: 200% auto;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  color: transparent;
+  animation: shine 6s linear infinite;
+  text-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@utility bg-stardust {
+  background-image: 
+    radial-gradient(var(--color-gold-300) 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(var(--color-gold-500) 2px, transparent 2px),
+    radial-gradient(rgba(255,255,255,0.8) 1.5px, transparent 1.5px);
+  background-size: 150px 150px, 90px 90px, 200px 200px, 110px 110px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  opacity: 0.5;
+  animation: stardust-drift 100s linear infinite;
+}
+
+@keyframes stardust-drift {
+  from { background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; }
+  to { background-position: 150px 150px, 240px 260px, 330px 470px, 180px 210px; }
 }
 
 @utility bg-gradient-premium {

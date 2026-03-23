@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Great_Vibes } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -11,6 +11,12 @@ const inter = Inter({
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
+  subsets: ["latin"],
+});
+
+const greatVibes = Great_Vibes({
+  variable: "--font-great-vibes",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -31,13 +37,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${playfair.variable} scroll-smooth antialiased dark`}
+      className={`${inter.variable} ${playfair.variable} ${greatVibes.variable} scroll-smooth antialiased dark`}
     >
-      <body className="min-h-screen flex flex-col bg-primary-900 text-slate-100 selection:bg-gold-500/30 selection:text-gold-300">
+      <body className="min-h-screen flex flex-col bg-primary-900 text-slate-100 selection:bg-gold-500/30 selection:text-gold-200">
         {/* Animated Background Overlay */}
-        <div className="fixed inset-0 z-[-1] bg-[radial-gradient(ellipse_at_top_right,_var(--color-primary-800)_0%,_transparent_50%),radial-gradient(ellipse_at_bottom_left,_var(--color-primary-700)_0%,_transparent_50%)] opacity-50 mix-blend-screen pointer-events-none"></div>
-        {/* Sparkle Texture Overlay */}
-        <div className="fixed inset-0 z-[-1] opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] pointer-events-none"></div>
+        <div className="fixed inset-0 z-[-1] pointer-events-none">
+          <div className="absolute inset-0 opacity-40 bg-[radial-gradient(ellipse_at_top_right,_var(--color-primary-800),_transparent_50%)]"></div>
+          <div className="absolute inset-0 opacity-40 bg-[radial-gradient(ellipse_at_bottom_left,_var(--color-primary-700),_transparent_50%)]"></div>
+          <div className="absolute inset-0 bg-stardust pointer-events-none"></div>
+        </div>
         
         <Navbar />
         <main className="flex-grow">
