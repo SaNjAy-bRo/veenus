@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 import ServiceCard from "@/components/ServiceCard";
+import HeroCarousel from "@/components/HeroCarousel";
 import { Star, ShieldCheck, Activity, Heart, CheckCircle2, Quote } from "lucide-react";
 
 const carouselImages = Array.from({ length: 9 }, (_, i) => `/images/carousel-${i + 1}.jpg`);
@@ -27,24 +28,9 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full overflow-hidden">
       
-      {/* 1. Hero Section: Pure Image Auto-Scroll */}
-      <section className="relative w-full h-[85vh] min-h-[600px] flex items-center overflow-hidden bg-primary-900 border-b border-gold-500/20">
-        <div className="absolute inset-0 z-0 flex whitespace-nowrap">
-          <div className="animate-[carousel_60s_linear_infinite] flex h-full items-center">
-            {/* Double the array for infinite smooth scrolling */}
-            {[...carouselImages, ...carouselImages].map((img, idx) => (
-              <div key={idx} className="relative h-full w-[100vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw] shrink-0 border-r border-gold-500/10">
-                <Image
-                  src={img}
-                  alt={`Veenus Center Service ${idx}`}
-                  fill
-                  className="object-cover"
-                  priority={idx < 2}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+      {/* 1. Hero Section: Discrete Auto-Scroll Banner Gallery */}
+      <section className="relative w-full h-[85vh] min-h-[600px] flex items-center overflow-hidden border-b border-gold-500/20">
+        <HeroCarousel images={carouselImages} />
       </section>
 
       {/* 2. Welcome Section */}
