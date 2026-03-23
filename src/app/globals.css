@@ -1,20 +1,42 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary-900: #1C0434;
+  --color-primary-800: #2D0A46;
+  --color-primary-700: #3B0A66;
+  --color-primary-600: #4B0B8C;
+  --color-gold-500: #D4AF37;
+  --color-gold-400: #F3E5AB;
+  --color-gold-300: #FFF3C4;
+  --color-gold-600: #AA8A2A;
+  
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  
+  --animate-carousel: carousel 30s linear infinite;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes carousel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1C0434;
     --foreground: #ededed;
   }
 }
@@ -22,5 +44,39 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Utilities for Premium Look */
+@utility text-gradient-gold {
+  background: linear-gradient(135deg, var(--color-gold-400) 0%, var(--color-gold-500) 50%, var(--color-gold-600) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@utility bg-gradient-premium {
+  background: linear-gradient(135deg, var(--color-primary-900) 0%, var(--color-primary-800) 100%);
+}
+
+@utility glass-panel {
+  background: rgba(45, 10, 70, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+@utility glass-panel-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@utility hover-gold-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-gold-glow:hover {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+  border-color: rgba(212, 175, 55, 0.8);
 }
