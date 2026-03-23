@@ -34,11 +34,23 @@ export default function Home() {
       </section>
 
       {/* 2. Welcome Section */}
-      <section className="py-24 relative z-10 bg-primary-900">
+      <section className="py-16 md:py-24 relative z-10 bg-primary-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          
+          {/* Mobile Only Title Title -> Appears above Image */}
+          <div className="lg:hidden mb-8 space-y-4">
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gold-500/30 bg-primary-800/50 text-gold-400 text-xs sm:text-sm font-semibold tracking-widest uppercase">
+              <Star className="w-5 h-5" />
+              <span>Khammam's Premier Destination</span>
+            </div>
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-bold leading-tight">
+              Welcome to your <span className="text-gradient-gold">Transformation</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Image Side */}
-            <div className="relative h-[500px] w-full rounded-[2rem] overflow-hidden glass-panel border border-gold-500/20 shadow-2xl group">
+            <div className="relative h-[350px] md:h-[500px] w-full rounded-[2rem] overflow-hidden glass-panel border border-gold-500/20 shadow-2xl group order-1">
               <div className="absolute inset-0 bg-gradient-to-tr from-gold-500/10 to-transparent z-10"></div>
               <Image 
                 src="/images/carousel-5.jpg" 
@@ -54,25 +66,28 @@ export default function Home() {
             </div>
 
             {/* Text Side */}
-            <div className="space-y-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold-500/30 bg-primary-800/50 text-gold-400 text-xs font-semibold tracking-widest uppercase">
-                <Star className="w-4 h-4" />
-                <span>Khammam's Premier Destination</span>
+            <div className="space-y-8 order-2">
+              {/* Desktop Only Title */}
+              <div className="hidden lg:block space-y-6">
+                <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gold-500/30 bg-primary-800/50 text-gold-400 font-semibold tracking-widest uppercase text-sm">
+                  <Star className="w-5 h-5" />
+                  <span>Khammam's Premier Destination</span>
+                </div>
+                <h2 className="font-serif text-6xl lg:text-7xl text-white font-bold leading-tight">
+                  Welcome to your <span className="text-gradient-gold">Transformation</span>
+                </h2>
               </div>
-              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight">
-                Welcome to your <span className="text-gradient-gold">Transformation</span>
-              </h2>
-              <p className="text-slate-300 text-lg leading-relaxed font-light">
+              <p className="text-slate-300 text-xl leading-relaxed font-light">
                 At Veenus Wellness & Slimming Center, we merge luxurious comfort with state-of-the-art aesthetic technology. Our mission is to help you rediscover your best self through personalized, non-invasive services.
               </p>
-              <p className="text-slate-400 leading-relaxed">
+              <p className="text-slate-400 leading-relaxed text-base md:text-lg">
                 Whether you seek targeted inch loss, permanent hair reduction, or advanced body sculpting, our expert team provides completely painless procedures guaranteed to deliver visible results in just 5-10 sessions.
               </p>
-              <div className="pt-4 flex gap-4">
-                <Link href="/about" className="glass-panel text-gold-400 font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-full border border-gold-500 hover:bg-gold-500 hover:text-primary-900 transition-all duration-300">
+              <div className="pt-4 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <Link href="/about" className="glass-panel text-gold-400 items-center justify-center filter text-center font-bold uppercase tracking-widest text-xs sm:text-sm px-6 py-4 rounded-full border border-gold-500 hover:bg-gold-500 hover:text-primary-900 transition-all duration-300">
                   Read Our Story
                 </Link>
-                <Link href="/contact" className="bg-gradient-to-r from-gold-600 to-gold-400 text-primary-900 font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] transition-all duration-300">
+                <Link href="/contact" className="bg-gradient-to-r text-center filter from-gold-600 to-gold-400 text-primary-900 font-bold uppercase tracking-widest items-center justify-center text-xs sm:text-sm px-6 py-4 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] transition-all duration-300">
                   Book A Session
                 </Link>
               </div>
@@ -85,23 +100,19 @@ export default function Home() {
       <section className="bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600 py-4 shadow-2xl relative z-20">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 relative z-10">
           <div className="flex items-center gap-3">
-            <span className="animate-pulse flex h-3 w-3 relative">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
-            </span>
-            <span className="font-bold text-primary-900 uppercase tracking-widest text-sm">Limited Time Offer</span>
+            <span className="font-bold text-primary-900 uppercase tracking-widest text-base">Limited Time Offer</span>
           </div>
-          <p className="font-serif text-xl md:text-2xl font-bold text-primary-900">
+          <p className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-primary-900 text-center sm:text-left leading-tight">
             Get Up To 50% OFF All Premium Services
           </p>
-          <Link href="/contact" className="text-primary-900 font-bold border-b-2 border-primary-900 pb-0.5 hover:text-white hover:border-white transition-colors uppercase text-sm tracking-wider">
+          <Link href="/contact" className="text-primary-900 font-bold border-b-2 border-primary-900 pb-0.5 hover:text-white hover:border-white transition-colors uppercase text-sm sm:text-base tracking-wider">
             Claim Offer Now
           </Link>
         </div>
       </section>
 
       {/* Services Grid (Mapped to /services) */}
-      <section id="services" className="py-24 relative z-10">
+      <section id="services" className="py-16 md:py-24 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle 
             title="Our Services" 
@@ -130,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* Redesigned Testimonials */}
-      <section className="py-24 relative z-10 overflow-hidden">
+      <section className="py-16 md:py-24 relative z-10 overflow-hidden">
         {/* Decorative background glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-primary-900 via-primary-800 to-primary-900 -z-10"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold-500/5 rounded-full blur-[100px] -z-10"></div>
@@ -141,10 +152,9 @@ export default function Home() {
             subtitle="Hear From Our Clients"
             centered
           />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-10 md:mt-16">
             {testimonials.map((test, i) => (
-              <div key={i} className="relative glass-panel bg-primary-900/60 p-10 rounded-3xl border border-gold-500/20 shadow-2xl group hover:-translate-y-2 transition-transform duration-500">
+              <div key={i} className="relative glass-panel bg-primary-900/60 p-6 md:p-10 rounded-3xl border border-gold-500/20 shadow-2xl group hover:-translate-y-2 transition-transform duration-500 flex flex-col h-full">
                 {/* Large decorative quote mark */}
                 <Quote className="absolute top-6 right-8 w-16 h-16 text-gold-500/10 group-hover:text-gold-500/20 transition-colors duration-500" />
                 
@@ -153,16 +163,15 @@ export default function Home() {
                     <Star key={j} className="w-4 h-4 fill-current mr-1" />
                   ))}
                 </div>
-                
-                <p className="text-slate-300 italic mb-10 leading-relaxed font-light relative z-10 text-lg">"{test.comment}"</p>
+                <p className="text-slate-300 italic mb-10 leading-relaxed font-light relative z-10 flex-grow text-lg md:text-xl">"{test.comment}"</p>
                 
                 <div className="flex items-center gap-4 mt-auto border-t border-white/10 pt-6">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold-600 to-gold-400 flex items-center justify-center text-primary-900 font-bold font-serif text-xl shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-gold-600 to-gold-400 flex items-center justify-center text-primary-900 font-bold font-serif text-2xl shadow-[0_0_15px_rgba(212,175,55,0.4)]">
                     {test.name.charAt(0)}
                   </div>
                   <div>
-                    <h4 className="font-bold text-white tracking-wide">{test.name}</h4>
-                    <p className="text-gold-500 text-xs uppercase tracking-widest mt-1">{test.serviceName}</p>
+                    <h4 className="font-bold text-white tracking-wide text-lg">{test.name}</h4>
+                    <p className="text-gold-500 text-sm uppercase tracking-widest mt-1">{test.serviceName}</p>
                   </div>
                 </div>
               </div>

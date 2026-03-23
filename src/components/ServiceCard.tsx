@@ -45,18 +45,18 @@ export default function ServiceCard({ title, description, icon, img, delay = 0, 
           </div>
         )}
 
-        <h3 className="font-serif text-2xl text-white mb-3 group-hover:text-gold-300 transition-colors duration-300">
+        <h3 className="font-serif text-3xl text-white mb-4 group-hover:text-gold-300 transition-colors duration-300 leading-tight">
           {title}
         </h3>
         
         {description && (
-          <p className="text-slate-300 text-sm leading-relaxed mb-6 flex-grow">
+          <p className="text-slate-300 text-base leading-relaxed mb-6 flex-grow">
             {description}
           </p>
         )}
 
         {/* CTA Line */}
-        <div className="flex items-center mt-auto text-sm font-semibold tracking-widest uppercase text-gold-500 group-hover:text-gold-300 transition-colors">
+        <div className="flex items-center mt-auto text-base font-semibold tracking-widest uppercase text-gold-500 group-hover:text-gold-300 transition-colors">
           <span>Service Info</span>
           <ArrowRight className={`ml-2 w-4 h-4 transition-transform duration-300 ${isHovered ? 'translate-x-2' : ''}`} />
         </div>

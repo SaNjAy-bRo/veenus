@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display, Great_Vibes } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
 import "./globals.css";
 
 const inter = Inter({
@@ -48,10 +49,11 @@ export default function RootLayout({
         </div>
         
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow pt-20">
           {children}
         </main>
         <Footer />
+        <WhatsAppWidget />
       </body>
     </html>
   );
