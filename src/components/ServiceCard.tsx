@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 interface ServiceCardProps {
@@ -8,14 +9,16 @@ interface ServiceCardProps {
   description?: string;
   icon?: React.ReactNode;
   delay?: number;
+  href?: string;
 }
 
-export default function ServiceCard({ title, description, icon, delay = 0 }: ServiceCardProps) {
+export default function ServiceCard({ title, description, icon, delay = 0, href = "#" }: ServiceCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div 
-      className="group relative glass-panel rounded-2xl p-8 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(212,175,55,0.3)] animate-float"
+    <Link 
+      href={href}
+      className="group relative glass-panel rounded-2xl p-8 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(212,175,55,0.3)] animate-float block"
       style={{ animationDelay: `${delay}s` }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -47,6 +50,6 @@ export default function ServiceCard({ title, description, icon, delay = 0 }: Ser
         <span>Explore Treatment</span>
         <ArrowRight className={`ml-2 w-4 h-4 transition-transform duration-300 ${isHovered ? 'translate-x-2' : ''}`} />
       </div>
-    </div>
+    </Link>
   );
 }
