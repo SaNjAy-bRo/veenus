@@ -7,20 +7,20 @@ import { Star, ShieldCheck, Activity, Heart, CheckCircle2, Quote } from "lucide-
 const carouselImages = Array.from({ length: 9 }, (_, i) => `/images/carousel-${i + 1}.jpg`);
 
 const services = [
-  { id: "body-slimming", title: "Body Slimming", desc: "Advanced treatments for inch loss and targeted body contorting.", icon: <Activity /> },
-  { id: "belly-fat-burn", title: "Belly Fat Burn", desc: "Melt away stubborn belly fat with safe, non-invasive technology.", icon: <Activity /> },
-  { id: "hip-thigh-reduction", title: "Hip & Thigh Reduction", desc: "Achieve visible results fast in 5-10 sessions.", icon: <Activity /> },
-  { id: "coolsculpting", title: "CoolSculpting", desc: "Freeze away stubborn fat. Permanent reduction, no surgery, no downtime.", icon: <ShieldCheck /> },
-  { id: "cavitation-therapy", title: "Cavitation Therapy", desc: "Safe, non-invasive body shaping using ultrasound technology.", icon: <ShieldCheck /> },
-  { id: "laser-hair-reduction", title: "Laser Hair Reduction", desc: "Silky smooth skin with permanent 100% painless hair reduction.", icon: <Star /> },
-  { id: "perfect-beard-shape", title: "Perfect Beard Shape", desc: "Sharp jawline look, permanent maintenance, no razor cuts.", icon: <Star /> },
-  { id: "microblading", title: "Microblading", desc: "Perfect eyebrows tailored to your unique facial structure.", icon: <Star /> },
+  { id: "body-slimming", title: "Body Slimming", desc: "Advanced services for inch loss and targeted body contorting.", img: "/images/carousel-1.jpg" },
+  { id: "belly-fat-burn", title: "Belly Fat Burn", desc: "Melt away stubborn belly fat with safe, non-invasive technology.", img: "/images/carousel-2.jpg" },
+  { id: "hip-thigh-reduction", title: "Hip & Thigh Reduction", desc: "Achieve visible results fast in 5-10 sessions.", img: "/images/carousel-4.jpg" },
+  { id: "coolsculpting", title: "CoolSculpting", desc: "Freeze away stubborn fat. Permanent reduction, no surgery, no downtime.", img: "/images/carousel-3.jpg" },
+  { id: "cavitation-therapy", title: "Cavitation Therapy", desc: "Safe, non-invasive body shaping using ultrasound technology.", img: "/images/carousel-5.jpg" },
+  { id: "laser-hair-reduction", title: "Laser Hair Reduction", desc: "Silky smooth skin with permanent 100% painless hair reduction.", img: "/images/carousel-6.jpg" },
+  { id: "perfect-beard-shape", title: "Perfect Beard Shape", desc: "Sharp jawline look, permanent maintenance, no razor cuts.", img: "/images/carousel-8.jpg" },
+  { id: "microblading", title: "Microblading", desc: "Perfect eyebrows tailored to your unique facial structure.", img: "/images/carousel-7.jpg" },
 ];
 
 const testimonials = [
-  { name: "Priya S.", treatment: "CoolSculpting", comment: "The CoolSculpting treatment worked wonders! Painless and visible results in just a few sessions. Highly recommend Veenus to anyone.", rating: 5 },
-  { name: "Rahul M.", treatment: "Laser Beard Shaping", comment: "Got laser hair removal and a perfect beard shape. I haven't cut myself with a razor in months. The luxurious environment makes every visit a treat.", rating: 5 },
-  { name: "Anitha V.", treatment: "Belly Fat Burn", comment: "Veenus Wellness is completely professional. The belly fat burn treatment gave me back my confidence. The staff is incredibly supportive.", rating: 5 },
+  { name: "Priya S.", serviceName: "CoolSculpting", comment: "The CoolSculpting service worked wonders! Painless and visible results in just a few sessions. Highly recommend Veenus to anyone.", rating: 5 },
+  { name: "Rahul M.", serviceName: "Laser Beard Shaping", comment: "Got laser hair removal and a perfect beard shape. I haven't cut myself with a razor in months. The luxurious environment makes every visit a treat.", rating: 5 },
+  { name: "Anitha V.", serviceName: "Belly Fat Burn", comment: "Veenus Wellness is completely professional. The belly fat burn service gave me back my confidence. The staff is incredibly supportive.", rating: 5 },
 ];
 
 export default function Home() {
@@ -33,28 +33,17 @@ export default function Home() {
           <div className="animate-[carousel_60s_linear_infinite] flex h-full items-center">
             {/* Double the array for infinite smooth scrolling */}
             {[...carouselImages, ...carouselImages].map((img, idx) => (
-              <div key={idx} className="relative h-full w-[100vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw] shrink-0 border-r border-gold-500/10 opacity-80 hover:opacity-100 transition-opacity duration-700">
+              <div key={idx} className="relative h-full w-[100vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw] shrink-0 border-r border-gold-500/10">
                 <Image
                   src={img}
-                  alt={`Veenus Center Treatment ${idx}`}
+                  alt={`Veenus Center Service ${idx}`}
                   fill
                   className="object-cover"
                   priority={idx < 2}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary-900 via-transparent to-primary-900/30 mix-blend-multiply" />
               </div>
             ))}
           </div>
-        </div>
-        
-        {/* Subtle overlay logo for branding without obstructing images */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10 bg-primary-900/30">
-           <div className="glass-panel px-12 py-8 rounded-3xl border border-gold-500/30 shadow-[0_0_50px_rgba(45,10,70,0.8)] backdrop-blur-md text-center">
-              <h1 className="font-serif text-5xl md:text-7xl font-bold text-gradient-gold drop-shadow-2xl tracking-wider">
-                Veenus
-              </h1>
-              <p className="text-white tracking-[0.3em] font-light text-sm uppercase mt-4">Wellness & Slimming</p>
-           </div>
         </div>
       </section>
 
@@ -88,7 +77,7 @@ export default function Home() {
                 Welcome to your <span className="text-gradient-gold">Transformation</span>
               </h2>
               <p className="text-slate-300 text-lg leading-relaxed font-light">
-                At Veenus Wellness & Slimming Center, we merge luxurious comfort with state-of-the-art aesthetic technology. Our mission is to help you rediscover your best self through personalized, non-invasive treatments.
+                At Veenus Wellness & Slimming Center, we merge luxurious comfort with state-of-the-art aesthetic technology. Our mission is to help you rediscover your best self through personalized, non-invasive services.
               </p>
               <p className="text-slate-400 leading-relaxed">
                 Whether you seek targeted inch loss, permanent hair reduction, or advanced body sculpting, our expert team provides completely painless procedures guaranteed to deliver visible results in just 5-10 sessions.
@@ -117,7 +106,7 @@ export default function Home() {
             <span className="font-bold text-primary-900 uppercase tracking-widest text-sm">Limited Time Offer</span>
           </div>
           <p className="font-serif text-xl md:text-2xl font-bold text-primary-900">
-            Get Up To 50% OFF All Premium Treatments
+            Get Up To 50% OFF All Premium Services
           </p>
           <Link href="/contact" className="text-primary-900 font-bold border-b-2 border-primary-900 pb-0.5 hover:text-white hover:border-white transition-colors uppercase text-sm tracking-wider">
             Claim Offer Now
@@ -129,7 +118,7 @@ export default function Home() {
       <section id="services" className="py-24 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle 
-            title="Our Treatments" 
+            title="Our Services" 
             subtitle="Explore Premium Services"
           />
           
@@ -139,7 +128,7 @@ export default function Home() {
                 key={service.id}
                 title={service.title}
                 description={service.desc}
-                icon={service.icon}
+                img={service.img}
                 delay={index * 0.1}
                 href={`/services#${service.id}`}
               />
@@ -187,7 +176,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-bold text-white tracking-wide">{test.name}</h4>
-                    <p className="text-gold-500 text-xs uppercase tracking-widest mt-1">{test.treatment}</p>
+                    <p className="text-gold-500 text-xs uppercase tracking-widest mt-1">{test.serviceName}</p>
                   </div>
                 </div>
               </div>

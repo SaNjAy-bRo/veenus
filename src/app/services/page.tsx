@@ -7,14 +7,14 @@ const detailedServices = [
   { 
     id: "body-slimming", 
     title: "Body Slimming", 
-    desc: "Advanced treatments designed to target specific areas of the body, providing safe inch loss and creating a beautifully contoured shape. Our non-invasive procedures break down fat cells while preserving surrounding tissues, giving you a slimmer, firmer physique effortlessly.", 
+    desc: "Advanced services designed to target specific areas of the body, providing safe inch loss and creating a beautifully contoured shape. Our non-invasive procedures break down fat cells while preserving surrounding tissues, giving you a slimmer, firmer physique effortlessly.", 
     img: "/images/carousel-1.jpg",
     benefits: ["Targeted inch loss", "Safe & non-invasive", "Firms and tones skin"]
   },
   { 
     id: "belly-fat-burn", 
     title: "Belly Fat Burn", 
-    desc: "Melt away stubborn tummy fat with our specialized ultrasound and laser technology. Ideal for stubborn areas that resist diet and exercise, this treatment is comfortable, incredibly fast, and shows visible reduction in just a few sessions.", 
+    desc: "Melt away stubborn tummy fat with our specialized ultrasound and laser technology. Ideal for stubborn areas that resist diet and exercise, this service is comfortable, incredibly fast, and shows visible reduction in just a few sessions.", 
     img: "/images/carousel-2.jpg",
     benefits: ["Rapid visible results", "Zero downtime", "Targets exact problem areas"]
   },
@@ -71,7 +71,7 @@ export default function ServicesPage() {
           Our <span className="text-gradient-gold">Services</span>
         </h1>
         <p className="max-w-3xl mx-auto text-lg text-slate-300 font-light leading-relaxed animate-fade-in">
-          Explore our comprehensive range of luxurious, proven, and completely safe treatments designed to help you look and feel your absolute best.
+          Explore our comprehensive range of luxurious, proven, and completely safe services designed to help you look and feel your absolute best.
         </p>
       </div>
 
@@ -130,7 +130,7 @@ export default function ServicesPage() {
                     href="/contact"
                     className="inline-flex glass-panel border-gold-500 text-gold-400 font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-full hover:bg-gold-500 hover:text-primary-900 transition-all duration-300"
                   >
-                    Book This Treatment
+                    Book This Service
                   </Link>
                 </div>
 

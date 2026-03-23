@@ -5,7 +5,7 @@ import { Sparkles, Shield, HeartHandshake, Award } from "lucide-react";
 export default function About() {
   const values = [
     { title: "Luxurious Environment", desc: "A serene, welcoming space designed to make you feel completely at ease.", icon: <Sparkles className="w-6 h-6" /> },
-    { title: "Safe & Proven", desc: "100% safe, non-invasive treatments clinically proven for absolute effectiveness.", icon: <Shield className="w-6 h-6" /> },
+    { title: "Safe & Proven", desc: "100% safe, non-invasive services clinically proven for absolute effectiveness.", icon: <Shield className="w-6 h-6" /> },
     { title: "Expert Care", desc: "Painless procedures performed by dedicated specialists who prioritize your well-being.", icon: <HeartHandshake className="w-6 h-6" /> },
     { title: "Award Winning", desc: "Khammam's foremost destination for premium wellness & slimming services.", icon: <Award className="w-6 h-6" /> },
   ];
@@ -23,7 +23,7 @@ export default function About() {
               Situated in the heart of Khammam, Veenus Wellness & Slimming Center is a sanctuary of transformation and rejuvenation. We believe that true wellness stems from a harmonious balance of advanced aesthetic technology and profound care.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed">
-              Our clinic offers state-of-the-art body slimming, specialized laser hair reduction, and tailored skin care services. Operating in a meticulously curated environment, we proudly boast safe, proven, and completely painless treatments guaranteeing visible results.
+              Our clinic offers state-of-the-art body slimming, specialized laser hair reduction, and tailored skin care services. Operating in a meticulously curated environment, we proudly boast safe, proven, and completely painless services guaranteeing visible results.
             </p>
           </div>
           

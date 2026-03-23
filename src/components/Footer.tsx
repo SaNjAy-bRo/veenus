@@ -22,7 +22,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-slate-400 mt-4 text-sm leading-relaxed text-center md:text-left">
-              Khammam's foremost wellness and slimming center offering advanced body slimming and skin care services with safe, proven, and painless treatments.
+              Khammam's foremost wellness and slimming center offering advanced body slimming and skin care services with safe, proven, and painless services.
             </p>
           </div>
 
@@ -35,7 +35,7 @@ export default function Footer() {
             <ul className="space-y-3 text-center md:text-left text-sm text-slate-300">
               <li><Link href="/" className="hover:text-gold-400 transition-colors">Home</Link></li>
               <li><Link href="/about" className="hover:text-gold-400 transition-colors">About Us</Link></li>
-              <li><Link href="/#services" className="hover:text-gold-400 transition-colors">Our Treatments</Link></li>
+              <li><Link href="/#services" className="hover:text-gold-400 transition-colors">Our Services</Link></li>
               <li><Link href="/contact" className="hover:text-gold-400 transition-colors">Contact</Link></li>
             </ul>
           </div>

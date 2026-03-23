@@ -25,8 +25,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "glass-panel py-3 shadow-lg" : "bg-transparent py-5"
+      className={`sticky top-0 w-full z-50 transition-all duration-300 border-b border-gold-500/20 ${
+        isScrolled ? "glass-panel py-3 shadow-xl" : "bg-primary-900 py-5 shadow-md"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
