@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function WhatsAppWidget() {
   return (
     <Link
-      href="https://wa.me/917337330044"
+      href="https://wa.me/917661089797"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-8 right-8 z-[100] group flex items-center justify-center"
