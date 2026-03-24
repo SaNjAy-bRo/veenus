@@ -67,7 +67,7 @@ export default function Navbar() {
           {/* Mobile menu button and Quick Call */}
           <div className="md:hidden flex items-center gap-4">
             <a 
-              href="tel:+917337330044" 
+              href="tel:+917661089797" 
               className="p-2 text-gold-400 hover:text-gold-300 transition-colors"
               aria-label="Call Veenus Wellness"
             >

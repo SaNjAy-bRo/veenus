@@ -42,8 +42,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-gold-400 font-serif text-2xl mb-3">Call or Text</h3>
                   <div className="space-y-3">
-                    <a href="tel:+917337330044" className="flex items-center text-slate-300 hover:text-white transition-colors group/link text-lg">
-                      <span className="font-light tracking-wide inline-block group-hover/link:translate-x-1 transition-transform">+91 733733 0044</span>
+                    <a href="tel:+917661089797" className="flex items-center text-slate-300 hover:text-white transition-colors group/link text-lg">
+                      <span className="font-light tracking-wide inline-block group-hover/link:translate-x-1 transition-transform">766 108 9797</span>
                     </a>
                     <a href="tel:+919652655908" className="flex items-center text-slate-300 hover:text-white transition-colors group/link text-lg">
                       <span className="font-light tracking-wide inline-block group-hover/link:translate-x-1 transition-transform">96526 55908</span>

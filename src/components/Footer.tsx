@@ -58,7 +58,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="text-gold-500 shrink-0" size={20} />
-                <Link href="tel:+917337330044" className="hover:text-gold-400 transition-colors">+91 733733 0044</Link>
+                <div className="flex flex-wrap gap-x-2 items-center">
+                  <Link href="tel:+917661089797" className="hover:text-gold-400 transition-colors">766 108 9797</Link>
+                  <span className="text-slate-500 text-sm">|</span>
+                  <Link href="tel:+919652655908" className="hover:text-gold-400 transition-colors">96526 55908</Link>
+                </div>
               </div>
               
               <div className="flex items-center gap-4 pt-4 justify-center md:justify-start">
