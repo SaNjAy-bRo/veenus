@@ -5,7 +5,7 @@ import ServiceCard from "@/components/ServiceCard";
 import HeroCarousel from "@/components/HeroCarousel";
 import { Star, ShieldCheck, Activity, Heart, CheckCircle2, Quote } from "lucide-react";
 
-const carouselImages = Array.from({ length: 9 }, (_, i) => `/images/carousel-${i + 1}.jpg`);
+const carouselImages = ["/images/banner-1.jpeg", "/images/banner-2.jpeg", "/images/banner-3.jpeg"];
 
 const services = [
   { id: "body-slimming", title: "Body Slimming", desc: "Advanced services for inch loss and targeted body contorting.", img: "/images/carousel-1.jpg" },
@@ -53,7 +53,7 @@ export default function Home() {
             <div className="relative h-[350px] md:h-[500px] w-full rounded-[2rem] overflow-hidden glass-panel border border-gold-500/20 shadow-2xl group order-1">
               <div className="absolute inset-0 bg-gradient-to-tr from-gold-500/10 to-transparent z-10"></div>
               <Image 
-                src="/images/carousel-5.jpg" 
+                src="/images/banner-2.jpeg" 
                 alt="Welcome to Veenus" 
                 fill 
                 className="object-cover group-hover:scale-105 transition-transform duration-1000"
