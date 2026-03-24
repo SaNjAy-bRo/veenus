@@ -42,8 +42,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-gold-400 font-serif text-2xl mb-3">Call or Text</h3>
                   <div className="space-y-3">
-                    <a href="tel:+917661089797" className="flex items-center text-slate-300 hover:text-white transition-colors group/link text-lg">
-                      <span className="font-light tracking-wide inline-block group-hover/link:translate-x-1 transition-transform">766 108 9797</span>
+                    <a href="tel:+917337330044" className="flex items-center text-slate-300 hover:text-white transition-colors group/link text-lg">
+                      <span className="font-light tracking-wide inline-block group-hover/link:translate-x-1 transition-transform">+91 733733 0044</span>
                     </a>
                     <a href="tel:+919652655908" className="flex items-center text-slate-300 hover:text-white transition-colors group/link text-lg">
                       <span className="font-light tracking-wide inline-block group-hover/link:translate-x-1 transition-transform">96526 55908</span>
@@ -54,10 +54,10 @@ export default function Contact() {
             </div>
 
             <div className="pt-6 flex gap-4">
-              <a href="https://wa.me/917661089797" className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-4 rounded-xl font-bold shadow-lg hover:bg-white hover:text-[#25D366] transition-all duration-300 uppercase tracking-widest text-sm">
+              <a href="https://wa.me/917337330044" className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-4 rounded-xl font-bold shadow-lg hover:bg-white hover:text-[#25D366] transition-all duration-300 uppercase tracking-widest text-sm">
                 <MessageCircle size={20} /> WhatsApp
               </a>
-              <a href="mailto:info@veenus.com" className="flex-1 flex items-center justify-center gap-2 glass-panel border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-primary-900 px-6 py-4 rounded-xl font-bold shadow-lg transition-all duration-300 uppercase tracking-widest text-sm">
+              <a href="mailto:veenuswellness2026@gmail.com" className="flex-1 flex items-center justify-center gap-2 glass-panel border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-primary-900 px-6 py-4 rounded-xl font-bold shadow-lg transition-all duration-300 uppercase tracking-widest text-sm">
                 <Mail size={20} /> Email Us
               </a>
             </div>
