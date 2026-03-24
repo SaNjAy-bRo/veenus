@@ -36,7 +36,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center group relative z-50 -ml-2">
             <div className="relative w-[180px] h-[65px] md:w-[280px] md:h-[100px] transition-transform duration-300 hover:scale-105">
               <Image 
-                src="/veenus nav.png" 
+                src="/Veenus.png" 
                 alt="Veenus Wellness & Slimming Center" 
                 fill 
                 className="object-contain object-left"
