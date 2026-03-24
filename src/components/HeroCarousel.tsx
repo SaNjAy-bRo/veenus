@@ -21,7 +21,7 @@ export default function HeroCarousel({ images }: HeroCarouselProps) {
   return (
     <div className="absolute inset-0 z-0 overflow-hidden bg-primary-900">
       <div 
-        className="flex h-full transition-transform duration-1000 ease-in-out"
+        className="flex h-full w-full transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((img, idx) => (
