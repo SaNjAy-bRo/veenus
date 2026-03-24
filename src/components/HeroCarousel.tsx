@@ -19,18 +19,19 @@ export default function HeroCarousel({ images }: HeroCarouselProps) {
   }, [images.length]);
 
   return (
-    <div className="absolute inset-0 z-0 overflow-hidden bg-primary-900">
+    <div className="relative w-full overflow-hidden bg-primary-900">
       <div 
-        className="flex h-full w-full transition-transform duration-1000 ease-in-out"
+        className="flex w-full transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((img, idx) => (
-          <div key={idx} className="relative h-full w-full shrink-0">
+          <div key={idx} className="relative w-full shrink-0">
             <Image
               src={img}
               alt={`Veenus Center Banner ${idx + 1}`}
-              fill
-              className="object-cover"
+              width={1920}
+              height={800}
+              className="w-full h-auto object-cover"
               priority={idx === 0}
             />
           </div>
@@ -38,7 +39,7 @@ export default function HeroCarousel({ images }: HeroCarouselProps) {
       </div>
       
       {/* Slide Indicators */}
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-3 z-20">
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-3 z-20">
         {images.map((_, idx) => (
           <button
             key={idx}

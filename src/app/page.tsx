@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full overflow-hidden">
       
-      {/* 1. Hero Section: Seamlessly Scaling Banner */}
-      <section className="relative w-full h-[25vh] min-h-[220px] sm:h-[40vh] sm:min-h-[300px] md:h-auto md:min-h-0 md:aspect-[21/9] xl:aspect-[3/1] flex items-center overflow-hidden border-b border-gold-500/20 bg-primary-900">
+      {/* 1. Hero Section: Seamlessly Scaling Native Banner */}
+      <section className="w-full border-b border-gold-500/20 bg-primary-900">
         <HeroCarousel images={carouselImages} />
       </section>
 
