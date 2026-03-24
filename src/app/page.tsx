@@ -29,7 +29,7 @@ export default function Home() {
     <div className="flex flex-col w-full overflow-hidden">
       
       {/* 1. Hero Section: Discrete Auto-Scroll Banner Gallery */}
-      <section className="relative w-full h-[40vh] min-h-[300px] md:h-[85vh] md:min-h-[600px] flex items-center overflow-hidden border-b border-gold-500/20">
+      <section className="relative w-full h-[25vh] min-h-[220px] sm:h-[40vh] sm:min-h-[300px] md:h-[85vh] md:min-h-[600px] flex items-center overflow-hidden border-b border-gold-500/20">
         <HeroCarousel images={carouselImages} />
       </section>
 
