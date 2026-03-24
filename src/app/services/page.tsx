@@ -8,56 +8,56 @@ const detailedServices = [
     id: "body-slimming", 
     title: "Body Slimming", 
     desc: "Advanced services designed to target specific areas of the body, providing safe inch loss and creating a beautifully contoured shape. Our non-invasive procedures break down fat cells while preserving surrounding tissues, giving you a slimmer, firmer physique effortlessly.", 
-    img: "/images/carousel-1.jpg",
+    img: "/images/body slimming.jpeg",
     benefits: ["Targeted inch loss", "Safe & non-invasive", "Firms and tones skin"]
   },
   { 
     id: "belly-fat-burn", 
     title: "Belly Fat Burn", 
     desc: "Melt away stubborn tummy fat with our specialized ultrasound and laser technology. Ideal for stubborn areas that resist diet and exercise, this service is comfortable, incredibly fast, and shows visible reduction in just a few sessions.", 
-    img: "/images/carousel-2.jpg",
+    img: "/images/belly fat burn.jpeg",
     benefits: ["Rapid visible results", "Zero downtime", "Targets exact problem areas"]
   },
   { 
     id: "hip-thigh-reduction", 
     title: "Hip & Thigh Reduction", 
     desc: "Achieve the proportionate figure you desire. Our hip and thigh reduction therapies effectively smooth cellulite and reduce excess fat deposits, tightening the skin and revealing a beautifully sculpted lower body.", 
-    img: "/images/carousel-4.jpg",
+    img: "/images/hip & thigh reduction.jpeg",
     benefits: ["Cellulite reduction", "Proportionate sculpting", "Skin tightening effects"]
   },
   { 
     id: "coolsculpting", 
     title: "CoolSculpting", 
     desc: "The world's #1 non-invasive fat-reduction procedure. Freeze away stubborn fat permanently without surgery or downtime. The targeted cooling technology safely crystallizes fat cells, which your body naturally eliminates over time.", 
-    img: "/images/carousel-3.jpg",
+    img: "/images/cool sculpting.jpeg",
     benefits: ["Permanent fat cell reduction", "FDA cleared safe", "No needles or surgery"]
   },
   { 
     id: "cavitation-therapy", 
     title: "Cavitation Therapy", 
     desc: "Using advanced ultrasound technology, Cavitation Therapy safely breaks down deep fat cells which are then metabolized and naturally disposed of by your body, offering remarkable shaping without the need for anesthesia.", 
-    img: "/images/carousel-5.jpg",
+    img: "/images/caviation therapy.jpeg",
     benefits: ["Deep fat penetration", "Ultrasound precision", "Completely painless"]
   },
   { 
     id: "laser-hair-reduction", 
     title: "Laser Hair Reduction", 
     desc: "Say goodbye to unwanted hair forever. Our advanced 100% safe and painless laser hair reduction system ensures silky smooth skin. Suitable for all skin types, giving you the freedom to wear what you want, when you want.", 
-    img: "/images/carousel-6.jpg",
+    img: "/images/laser hair reduction.jpeg",
     benefits: ["Permanent hair reduction", "Pain-free diode laser", "Prevents ingrown hairs"]
   },
   { 
     id: "perfect-beard-shape", 
     title: "Perfect Beard Shape with Laser", 
     desc: "Define your sharp jawline look permanently. Eliminate razor cuts, skin irritation, and the hassle of daily shaving. Laser beard shaping keeps your lines universally crisp and well-maintained effortlessly.", 
-    img: "/images/carousel-8.jpg",
+    img: "/images/perfect beard shape.jpeg",
     benefits: ["Crisp permanent lines", "No razor bumps", "Low maintenance"]
   },
   { 
     id: "microblading", 
     title: "Microblading", 
     desc: "Enhance your natural beauty with perfectly tailored, semi-permanent eyebrows. Our expert technicians analyze your facial structure to craft realistic, fuller brows that frame your face flawlessly every single day.", 
-    img: "/images/carousel-7.jpg",
+    img: "/images/microblading.jpeg",
     benefits: ["Natural looking fullness", "Customized to your face", "Lasts 12-24 months"]
   },
 ];

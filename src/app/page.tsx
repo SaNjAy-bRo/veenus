@@ -8,14 +8,14 @@ import { Star, ShieldCheck, Activity, Heart, CheckCircle2, Quote } from "lucide-
 const carouselImages = ["/images/banner-1.jpeg", "/images/banner-2.jpeg", "/images/banner-3.jpeg"];
 
 const services = [
-  { id: "body-slimming", title: "Body Slimming", desc: "Advanced services for inch loss and targeted body contorting.", img: "/images/carousel-1.jpg" },
-  { id: "belly-fat-burn", title: "Belly Fat Burn", desc: "Melt away stubborn belly fat with safe, non-invasive technology.", img: "/images/carousel-2.jpg" },
-  { id: "hip-thigh-reduction", title: "Hip & Thigh Reduction", desc: "Achieve visible results fast in 5-10 sessions.", img: "/images/carousel-4.jpg" },
-  { id: "coolsculpting", title: "CoolSculpting", desc: "Freeze away stubborn fat. Permanent reduction, no surgery, no downtime.", img: "/images/carousel-3.jpg" },
-  { id: "cavitation-therapy", title: "Cavitation Therapy", desc: "Safe, non-invasive body shaping using ultrasound technology.", img: "/images/carousel-5.jpg" },
-  { id: "laser-hair-reduction", title: "Laser Hair Reduction", desc: "Silky smooth skin with permanent 100% painless hair reduction.", img: "/images/carousel-6.jpg" },
-  { id: "perfect-beard-shape", title: "Perfect Beard Shape", desc: "Sharp jawline look, permanent maintenance, no razor cuts.", img: "/images/carousel-8.jpg" },
-  { id: "microblading", title: "Microblading", desc: "Perfect eyebrows tailored to your unique facial structure.", img: "/images/carousel-7.jpg" },
+  { id: "body-slimming", title: "Body Slimming", desc: "Advanced services for inch loss and targeted body contorting.", img: "/images/body slimming.jpeg" },
+  { id: "belly-fat-burn", title: "Belly Fat Burn", desc: "Melt away stubborn belly fat with safe, non-invasive technology.", img: "/images/belly fat burn.jpeg" },
+  { id: "hip-thigh-reduction", title: "Hip & Thigh Reduction", desc: "Achieve visible results fast in 5-10 sessions.", img: "/images/hip & thigh reduction.jpeg" },
+  { id: "coolsculpting", title: "CoolSculpting", desc: "Freeze away stubborn fat. Permanent reduction, no surgery, no downtime.", img: "/images/cool sculpting.jpeg" },
+  { id: "cavitation-therapy", title: "Cavitation Therapy", desc: "Safe, non-invasive body shaping using ultrasound technology.", img: "/images/caviation therapy.jpeg" },
+  { id: "laser-hair-reduction", title: "Laser Hair Reduction", desc: "Silky smooth skin with permanent 100% painless hair reduction.", img: "/images/laser hair reduction.jpeg" },
+  { id: "perfect-beard-shape", title: "Perfect Beard Shape", desc: "Sharp jawline look, permanent maintenance, no razor cuts.", img: "/images/perfect beard shape.jpeg" },
+  { id: "microblading", title: "Microblading", desc: "Perfect eyebrows tailored to your unique facial structure.", img: "/images/microblading.jpeg" },
 ];
 
 const testimonials = [
@@ -53,7 +53,7 @@ export default function Home() {
             <div className="relative h-[350px] md:h-[500px] w-full rounded-[2rem] overflow-hidden glass-panel border border-gold-500/20 shadow-2xl group order-1">
               <div className="absolute inset-0 bg-gradient-to-tr from-gold-500/10 to-transparent z-10"></div>
               <Image 
-                src="/images/banner-2.jpeg" 
+                src="/images/carousel-5.jpg" 
                 alt="Welcome to Veenus" 
                 fill 
                 className="object-cover group-hover:scale-105 transition-transform duration-1000"
