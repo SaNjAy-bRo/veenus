@@ -3,7 +3,7 @@ import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 import ServiceCard from "@/components/ServiceCard";
 import HeroCarousel from "@/components/HeroCarousel";
-import { Star, ShieldCheck, Activity, Heart, CheckCircle2, Quote } from "lucide-react";
+import { Star, ShieldCheck, Activity, Heart, CheckCircle2, Quote, Award } from "lucide-react";
 
 const carouselImages = ["/images/banner-1.jpeg", "/images/banner-2.jpeg", "/images/banner-3.jpeg"];
 
@@ -19,9 +19,9 @@ const services = [
 ];
 
 const testimonials = [
-  { name: "Priya S.", serviceName: "CoolSculpting", comment: "The CoolSculpting service worked wonders! Painless and visible results in just a few sessions. Highly recommend Veenus to anyone.", rating: 5 },
-  { name: "Rahul M.", serviceName: "Laser Beard Shaping", comment: "Got laser hair removal and a perfect beard shape. I haven't cut myself with a razor in months. The luxurious environment makes every visit a treat.", rating: 5 },
-  { name: "Anitha V.", serviceName: "Belly Fat Burn", comment: "Veenus Wellness is completely professional. The belly fat burn service gave me back my confidence. The staff is incredibly supportive.", rating: 5 },
+  { name: "Rajesh G", serviceName: "Laser Beard Shaping", comment: "The laser beard shaping service at Veenus is exceptional. I finally have the sharp, maintained look I wanted without the daily hassle. Highly recommended for men who value their grooming.", rating: 5 },
+  { name: "Laxmi K", serviceName: "Fat Burn Therapy", comment: "I'm amazed by the fat burn results. After just a few sessions, I can see a significant difference. The team is professional and the technology is top-notch.", rating: 5 },
+  { name: "Sailaja G", serviceName: "CoolSculpting", comment: "CoolSculpting at Veenus was a game-changer for me. It's completely painless and truly effective for stubborn fat. The luxurious setup made me feel very comfortable.", rating: 5 },
 ];
 
 export default function Home() {
@@ -40,8 +40,8 @@ export default function Home() {
           {/* Mobile Only Title Title -> Appears above Image */}
           <div className="lg:hidden mb-8 space-y-4">
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gold-500/30 bg-primary-800/50 text-gold-400 text-xs sm:text-sm font-semibold tracking-widest uppercase">
-              <Star className="w-5 h-5" />
-              <span>Khammam's Premier Destination</span>
+              <Award className="w-5 h-5" />
+              <span>Award-Winning Premier Destination</span>
             </div>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-bold leading-tight">
               Welcome to your <span className="text-gradient-gold">Transformation</span>
@@ -58,10 +58,15 @@ export default function Home() {
                 fill 
                 className="object-cover group-hover:scale-105 transition-transform duration-1000"
               />
-              {/* Badge overlay */}
+              {/* Badge overlay 1 */}
               <div className="absolute bottom-8 right-8 z-20 glass-panel bg-primary-900/80 p-6 rounded-2xl border-l-4 border-gold-500">
                 <p className="font-serif text-3xl text-gold-400 font-bold">100%</p>
                 <p className="text-white text-xs tracking-widest uppercase mt-1">Safe & Proven</p>
+              </div>
+              {/* Badge overlay 2 - Experience */}
+              <div className="absolute top-8 left-8 z-20 glass-panel bg-primary-900/80 p-4 rounded-2xl border-r-4 border-gold-500 animate-float">
+                <p className="font-serif text-2xl text-gold-400 font-bold">10+</p>
+                <p className="text-white text-[10px] tracking-widest uppercase mt-0.5">Years Experience</p>
               </div>
             </div>
 
@@ -70,8 +75,8 @@ export default function Home() {
               {/* Desktop Only Title */}
               <div className="hidden lg:block space-y-6">
                 <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gold-500/30 bg-primary-800/50 text-gold-400 font-semibold tracking-widest uppercase text-sm">
-                  <Star className="w-5 h-5" />
-                  <span>Khammam's Premier Destination</span>
+                  <Award className="w-5 h-5" />
+                  <span>Award-Winning Premier Destination</span>
                 </div>
                 <h2 className="font-serif text-6xl lg:text-7xl text-white font-bold leading-tight">
                   Welcome to your <span className="text-gradient-gold">Transformation</span>
@@ -81,7 +86,7 @@ export default function Home() {
                 At Veenus Wellness & Slimming Center, we merge luxurious comfort with state-of-the-art aesthetic technology. Our mission is to help you rediscover your best self through personalized, non-invasive services.
               </p>
               <p className="text-slate-400 leading-relaxed text-base md:text-lg">
-                Whether you seek targeted inch loss, permanent hair reduction, or advanced body sculpting, our expert team provides completely painless procedures guaranteed to deliver visible results in just 5-10 sessions.
+                Whether you seek targeted inch loss, permanent hair reduction, or advanced body sculpting, our expert team of 10+ years experienced therapists provides completely painless procedures guaranteed to deliver visible results in just 5-10 sessions.
               </p>
               <div className="pt-4 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
                 <Link href="/about" className="glass-panel text-gold-400 items-center justify-center filter text-center font-bold uppercase tracking-widest text-xs sm:text-sm px-6 py-4 rounded-full border border-gold-500 hover:bg-gold-500 hover:text-primary-900 transition-all duration-300">

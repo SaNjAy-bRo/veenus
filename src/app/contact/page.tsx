@@ -25,10 +25,13 @@ export default function Contact() {
                 <div>
                   <h3 className="text-gold-400 font-serif text-2xl mb-2">Visit Us</h3>
                   <p className="text-slate-300 leading-relaxed font-light">
-                    H.No: 11-11-184/13/9/A/1,<br/>
+                    H.No: 11-11-184/12/9/A/1,<br/>
                     3rd Floor, Bypass Road,<br/>
                     Near New Bus Stand, Bhuranpuram,<br/>
-                    Khammam, Telangana - 507001
+                    Khammam, Telangana - 500001
+                  </p>
+                  <p className="mt-4 text-gold-500/80 font-serif tracking-widest text-sm">
+                    GST No: 36ASBPVI164FIZI
                   </p>
                 </div>
               </div>

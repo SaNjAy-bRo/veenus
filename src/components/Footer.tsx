@@ -50,11 +50,16 @@ export default function Footer() {
             <div className="space-y-4 text-base text-slate-300">
               <div className="flex items-start gap-4">
                 <MapPin className="text-gold-500 shrink-0 mt-1" size={20} />
-                <span className="text-center md:text-left">
-                  Opp. More Supermarket,<br />
-                  Beside Sriven Toyota, Bypass Road,<br />
-                  Khammam, Telangana 507002
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-center md:text-left">
+                    H.No: 11-11-184/12/9/A/1, 3rd Floor,<br />
+                    Bypass Road, Near New Bus Stand, Bhuranpuram,<br />
+                    Khammam, Telangana - 500001
+                  </span>
+                  <span className="mt-2 text-gold-500/70 text-xs tracking-widest font-serif block text-center md:text-left">
+                    GST No: 36ASBPVI164FIZI
+                  </span>
+                </div>
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="text-gold-500 shrink-0" size={20} />

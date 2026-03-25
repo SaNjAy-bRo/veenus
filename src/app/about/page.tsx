@@ -6,8 +6,8 @@ export default function About() {
   const values = [
     { title: "Luxurious Environment", desc: "A serene, welcoming space designed to make you feel completely at ease.", icon: <Sparkles className="w-6 h-6" /> },
     { title: "Safe & Proven", desc: "100% safe, non-invasive services clinically proven for absolute effectiveness.", icon: <Shield className="w-6 h-6" /> },
-    { title: "Expert Care", desc: "Painless procedures performed by dedicated specialists who prioritize your well-being.", icon: <HeartHandshake className="w-6 h-6" /> },
-    { title: "Award Winning", desc: "Khammam's foremost destination for premium wellness & slimming services.", icon: <Award className="w-6 h-6" /> },
+    { title: "10+ Years Expert Care", desc: "Painless procedures performed by our team of 10+ years experienced therapists who prioritize your well-being.", icon: <HeartHandshake className="w-6 h-6" /> },
+    { title: "Multi-Award Winning", desc: "Recognized as Khammam's foremost destination for premium wellness & slimming services.", icon: <Award className="w-6 h-6" /> },
   ];
 
   return (
@@ -23,11 +23,11 @@ export default function About() {
               Situated in the heart of Khammam, Veenus Wellness & Slimming Center is a sanctuary of transformation and rejuvenation. We believe that true wellness stems from a harmonious balance of advanced aesthetic technology and profound care.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed">
-              Our clinic offers state-of-the-art body slimming, specialized laser hair reduction, and tailored skin care services. Operating in a meticulously curated environment, we proudly boast safe, proven, and completely painless services guaranteeing visible results.
+              Our clinic offers state-of-the-art body slimming, specialized laser hair reduction, and tailored skin care services. Managed by a team of 10+ years experienced therapists in a meticulously curated environment, we proudly boast safe, proven, and completely painless services guaranteeing visible results.
             </p>
           </div>
           
-          <div className="relative h-96 lg:h-[600px] w-full rounded-3xl overflow-hidden glass-panel flex items-center justify-center p-2 shadow-[0_0_40px_rgba(45,10,70,0.8)]">
+          <div className="relative h-96 lg:h-[600px] w-full rounded-3xl glass-panel flex items-center justify-center p-2 shadow-[0_0_40px_rgba(45,10,70,0.8)]">
             <div className="relative w-full h-full rounded-2xl overflow-hidden filter grayscale-[30%] sepia-[10%]">
               <Image 
                 src="/images/carousel-5.jpg" 
@@ -38,10 +38,14 @@ export default function About() {
               <div className="absolute inset-0 bg-primary-900/40 mix-blend-overlay"></div>
             </div>
             
-            {/* Floating Badge */}
-            <div className="absolute -bottom-8 -left-8 bg-gradient-premium p-6 rounded-2xl border border-gold-500/30 glass-panel shadow-2xl animate-float">
-              <span className="font-serif text-4xl text-gradient-gold font-bold block mb-1">100%</span>
-              <span className="text-slate-200 tracking-widest text-xs uppercase font-semibold">Painless Results</span>
+            {/* Floating Badge - Redesigned to be non-clipped and more premium */}
+            <div className="absolute -bottom-6 -left-6 z-30 bg-primary-900/90 backdrop-blur-xl p-6 rounded-2xl border border-gold-500/40 shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_20px_rgba(212,175,55,0.2)] animate-float-slow group/badge">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-gold-600 to-gold-400 rounded-2xl opacity-20 blur group-hover/badge:opacity-40 transition-opacity"></div>
+              <div className="relative">
+                <span className="font-serif text-5xl text-gradient-gold font-bold block mb-1">100%</span>
+                <span className="text-white tracking-[0.2em] text-[10px] uppercase font-bold">Painless Results</span>
+                <div className="mt-2 h-0.5 w-12 bg-gold-500/50"></div>
+              </div>
             </div>
           </div>
         </div>
